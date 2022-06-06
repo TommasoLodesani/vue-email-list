@@ -11,16 +11,7 @@
     <div id="app">
 
         <ul>
-            <li v-if="email_uno">{{email_uno}} </li>
-            <li v-if="email_due">{{email_due}} </li>
-            <li v-if="email_tre">{{email_tre}} </li>
-            <li v-if="email_quattro">{{email_quattro}} </li>
-            <li v-if="email_cinque">{{email_cinque}} </li>
-            <li v-if="email_sei">{{email_sei}} </li>
-            <li v-if="email_sette">{{email_sette}} </li>
-            <li v-if="email_otto">{{email_otto}} </li>
-            <li v-if="email_nove">{{email_nove}} </li>
-            <li v-if="email_dieci">{{email_dieci}} </li>
+            <li v-for="(email,i) in email" > {{email}} </li>
         </ul>
 
     </div>
